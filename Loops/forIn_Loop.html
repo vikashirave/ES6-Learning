@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <script>
+        //when you require to visit the properties or keys of the object, then you can use for…in loop.
+        /*for (variable_name in object_name) //Here in is the keyword  
+            {
+                // statement or block to execute    
+            }
+            */
+        function Mobile(model_no) {
+            this.Model = model_no;
+            this.Color = 'White';
+            this.RAM = '4GB';
+        }
+        var Samsung = new Mobile("Galaxy");
+        for (var props in Samsung) {
+            console.log(props + " : " + Samsung[props]);
+        }
+
+    </script>
+</body>
+
+</html>

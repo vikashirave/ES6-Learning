@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <script>
+        //It is a control flow statement that executes a block of code at least once
+        //The do…while loop checks the condition after the execution of the block
+        //that's why this control structure is also known as the post-test loop.
+        //Syntax
+
+        /* do {
+             // block of statements to be executed;
+         }
+         while (expression);
+         */
+
+        var count = 6, fact = 1;
+        do {
+            fact = fact * count--;
+        } while (count > 0);
+
+        console.log(fact);
+
+    </script>
+</body>
+
+</html>
