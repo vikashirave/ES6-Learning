@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <script>
+        let carWeakSet = new WeakSet();
+
+        let car1 = {
+            make: 'Honda',
+            model: 'civic'
+
+        }
+
+        carWeakSet.add(car1);
+
+        let car2 = {
+            make: 'Toyota',
+            model: 'Camry'
+
+        }
+        carWeakSet.add(car2);
+       // carWeakSet.delete(car1);
+        console.log(carWeakSet);
+    </script>
+</body>
+</html>
