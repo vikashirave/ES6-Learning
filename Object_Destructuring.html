@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <script>
+        const bioData = {
+            name : 'vikas',
+            age : 23,
+            deg : 'MCA',
+            hobb : {
+                 first : 'playing',
+                 sec : 'coding'
+            }
+        }
+         
+         let {name,age,deg,hobb} = bioData; //Object Destructuring
+         //let {name:myname, age:ages, deg} //Other method
+
+        console.log(`my Name is ${name}. my age is ${age} and highest qalification is ${deg} i love ${hobb.sec}`);
+    </script>
+</body>
+</html>
