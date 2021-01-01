@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <script>
+        class Student{
+            constructor(rollno, name, city){
+                this.rollno = rollno;
+                this.name = name;
+                this.city = city;
+            }
+            static countstud(){
+                 console.log('There are 50 users');
+            }
+
+            register(){
+                console.log(this.name+' is registered');
+            }
+        }
+
+        /*let vikas = new Student('52015', 'vicky', 'Pune');
+
+        vikas.register();
+        */
+
+        class Member extends Student{
+            constructor(rollno, name, city, memberPackage){
+                super(rollno, name, city);
+                this.package = memberPackage;
+            }
+         
+            getPackage(){
+                console.log(this.name+' is Subscribed to the ' +this.package+ ' package')
+            }
+        }
+
+        let vikas = new Member('52015', 'vicky', 'Pune', 'standard');
+        vikas.getPackage();
+        //vikas.register();
+    </script>
+</body>
+</html>
