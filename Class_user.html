@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <script>
+        class User {
+            constructor(username, email, password){
+                this.username = username;
+                this.email = email;
+                this.password = password;
+
+            }
+            register(){
+                console.log(this.username+' is now registered');
+            }
+        }
+
+        let vikas = new User('vikas', 'vikas@gmail.com', '12345');
+
+        vikas.register();
+    </script>
+</body>
+</html>
